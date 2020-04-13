@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">KoronaTakibi</string>
+    <string name="title_home">Anasayfa</string>
+    <string name="title_country">Ülkeler</string>
+</resources>

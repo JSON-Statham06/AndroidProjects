@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/card_bg_color"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:background="@drawable/home_header_bg"
+        android:layout_marginBottom="16dp"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/TotalInfoLayout"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="26sp"
+            android:textAlignment="center"
+            android:text="Koronavirüs COVID-19\nGlobal Takip"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingRight="20dp"
+        android:id="@+id/TotalInfoLayout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/ic_cases32"
+            android:textColor="@color/colorTotalConfirmed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLabelTotalConfirmed"
+            style="@style/LabelFontStyle"
+            android:text="Toplam Teşhis"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTotalConfirmed"
+            style="@style/TotalFontStyle"
+            tools:text="162387"
+            android:textColor="@color/colorTotalConfirmed"/>
+
+
+        <TextView
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/ic_death32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTotalDeaths"
+            android:id="@+id/tvLabelTotalDeaths"
+            style="@style/LabelFontStyle"
+            android:text="Toplam Ölüm"/>
+
+        <TextView
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTotalDeaths"
+            style="@style/TotalFontStyle"
+            tools:text="75648"
+            android:textColor="@color/colorTotalDeaths"/>
+
+
+        <TextView
+            android:textAlignment="textEnd"
+            android:paddingRight="5dp"
+            android:drawableLeft="@drawable/ic_recovered32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTotalRecovered"
+            android:id="@+id/tvLabelTotalRecovered"
+            style="@style/LabelFontStyle"
+            android:text="Toplam İyileşen"/>
+
+        <TextView
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTotalRecovered"
+            style="@style/TotalFontStyle"
+            tools:text="75938"
+            android:textColor="@color/colorTotalRecovered"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+
+            android:id="@+id/tvLastUpdated"
+            style="@style/LabelFontStyle"
+            android:textAlignment="center"
+            tools:text="Son Güncelleme\n 28 Mart 2020"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_circular_home"
+        android:indeterminateDrawable="@drawable/progress"
+        android:indeterminate="true">
+
+    </ProgressBar>
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f6f6f6</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="headerColor">#FF9F02</color>
+
+    <color name="colorTotalConfirmed">#e60000</color>
+    <color name="colorTotalDeaths">#999999</color>
+    <color name="colorTotalRecovered">#7bb974</color>
+
+
+
+    <color name="card_bg_color">#ffd868</color>
+    <color name="card_bg_dark_color">#721b65</color>
+    <color name="title_text_color">#f8615a</color>
+    <color name="content_text_color">#ffffff</color>
+    <color name="white">#ffffff</color>
+
+    <color name="navbarbg_color_forlight">#ffa34d</color>
+
+    <color name="titlebg_color_forlight">#ffa34d</color>
+    <color name="titlebg_color_fordark">#b80d57</color>
+
+    <color name="searchinputbg_color_forlight">#ffa34d</color>
+    <color name="searchinputbg_color_fordark">#721b65</color>
+
+
+
+</resources>
